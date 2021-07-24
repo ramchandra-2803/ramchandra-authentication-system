@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&display=swap");
+
+:root {
+  --balooSecond: "Baloo 2", system-ui;
+
+  --white: #fff;
+  --black: #000;
+  --light: #f4f6f7;
+  --dark: #121212;
+  --blue: #166ab9;
+
+  --soft-success: #19875452;
+  --soft-warning: #ffc10752;
+  --soft-danger: #dc354552;
+  --success: #198754;
+  --warning: #ffc107;
+  --danger: #dc3545;
+}
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 1em;
+  scroll-behavior: smooth;
+  user-select: none;
+  user-zoom: none;
+}
+body {
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  overflow: auto hidden;
+  font: 400 1em/1.5em var(--balooSecond);
+  color: var(--dark);
+  background: var(--white);
+  letter-spacing: 1px;
+}
+
+/* dark body */
+body.dark {
+  color: var(--light);
+  background: var(--black);
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+  opacity: 0.8;
+}
+
+@import url(./global.css);
+@import url(./style.css);

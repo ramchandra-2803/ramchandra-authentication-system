@@ -1,0 +1,380 @@
+/*  */
+
+.text-center {
+  text-align: center !important;
+}
+.text-left {
+  text-align: left !important;
+}
+.text-right {
+  text-align: right !important;
+}
+.text-justify {
+  text-align: justify !important;
+}
+
+/* margin */
+.m-a {
+  margin: auto !important;
+}
+.m-0 {
+  margin: 0 !important;
+}
+.m-1 {
+  margin: 0.5rem !important;
+}
+.m-2 {
+  margin: 1rem !important;
+}
+.m-3 {
+  margin: 1.5rem !important;
+}
+.m-4 {
+  margin: 2rem !important;
+}
+.m-5 {
+  margin: 3rem !important;
+}
+
+.my-a {
+  margin: auto 0 !important;
+}
+.my-0 {
+  margin: 0 auto !important;
+}
+.my-1 {
+  margin: 0.5rem auto !important;
+}
+.my-2 {
+  margin: 1rem auto !important;
+}
+.my-3 {
+  margin: 1.5rem auto !important;
+}
+.my-4 {
+  margin: 2rem auto !important;
+}
+.my-5 {
+  margin: 3rem auto !important;
+}
+
+.mx-a {
+  margin: 0 auto !important;
+}
+.mx-0 {
+  margin: auto 0 !important;
+}
+.mx-1 {
+  margin: auto 0.5rem !important;
+}
+.mx-2 {
+  margin: auto 1rem !important;
+}
+.mx-3 {
+  margin: auto 1.5rem !important;
+}
+.mx-4 {
+  margin: auto 2rem !important;
+}
+.mx-5 {
+  margin: auto 3rem !important;
+}
+
+.mt-a {
+  margin-top: 0 !important;
+}
+.mt-0 {
+  margin-top: 0 !important;
+}
+.mt-1 {
+  margin-top: 0.5rem !important;
+}
+.mt-2 {
+  margin-top: 1rem !important;
+}
+.mt-3 {
+  margin-top: 1.5rem !important;
+}
+.mt-4 {
+  margin-top: 2rem !important;
+}
+.mt-5 {
+  margin-top: 3rem !important;
+}
+
+.mb-a {
+  margin-bottom: 0 !important;
+}
+.mb-0 {
+  margin-bottom: 0 !important;
+}
+.mb-1 {
+  margin-bottom: 0.5rem !important;
+}
+.mb-2 {
+  margin-bottom: 1rem !important;
+}
+.mb-3 {
+  margin-bottom: 1.5rem !important;
+}
+.mb-4 {
+  margin-bottom: 2rem !important;
+}
+.mb-5 {
+  margin-bottom: 3rem !important;
+}
+
+.ml-a {
+  margin-left: 0 !important;
+}
+.ml-0 {
+  margin-left: 0 !important;
+}
+.ml-1 {
+  margin-left: 0.5rem !important;
+}
+.ml-2 {
+  margin-left: 1rem !important;
+}
+.ml-3 {
+  margin-left: 1.5rem !important;
+}
+.ml-4 {
+  margin-left: 2rem !important;
+}
+.ml-5 {
+  margin-left: 3rem !important;
+}
+.mr-a {
+  margin-right: 0 !important;
+}
+.mr-0 {
+  margin-right: 0 !important;
+}
+.mr-1 {
+  margin-right: 0.5rem !important;
+}
+.mr-2 {
+  margin-right: 1rem !important;
+}
+.mr-3 {
+  margin-right: 1.5rem !important;
+}
+.mr-4 {
+  margin-right: 2rem !important;
+}
+.mr-5 {
+  margin-right: 3rem !important;
+}
+
+/* !Text */
+
+.heading {
+  font: 400 calc(1rem + 1.5vw) / 1.5em var(--balooSecond);
+  margin: 0 0 1em;
+  text-transform: capitalize;
+  opacity: 1;
+}
+
+.heading.logo {
+  font-size: 1.5rem;
+  text-transform: none;
+  font-family: 500;
+}
+
+h1.heading {
+  font-size: calc(1rem + 2vw);
+  opacity: 0.8;
+}
+
+h4.heading {
+  font-size: calc(0.7rem + 0.5vw);
+  opacity: 0.6;
+}
+
+h6.heading {
+  font-weight: 600;
+  font-size: calc(0.6rem + 0.5vh);
+  opacity: 0.6;
+}
+
+/* Form */
+.btn,
+.label,
+.input {
+  font: 500 1em/1.5em var(--balooSecond);
+  background: var(--white);
+  border: none;
+  outline: none;
+  transition: all 0.4s ease;
+}
+
+.label {
+  cursor: pointer;
+  padding: 0 0.25em;
+}
+
+.btn,
+.input {
+  width: 100%;
+  border: none;
+  border-radius: 0.15em;
+  padding: 0.5em 1em;
+}
+
+/* Form */
+.form {
+  width: 100%;
+  position: relative;
+  height: 3em;
+  margin: 0;
+}
+
+.form .input,
+.form .label {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.form .input {
+  height: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+.form .label {
+  color: rgba(0, 0, 0, 0.6);
+  cursor: text;
+  left: 1.5rem;
+  top: 0.7em;
+}
+
+.input:not(:focus, :placeholder-shown),
+.input:focus {
+  border-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Form on focus */
+.form .input:focus + .label,
+.form .input:not(:focus, :placeholder-shown) + .label {
+  left: 1em;
+  top: -0.5em;
+  font-size: 00.8em;
+  color: var(--dark);
+}
+
+/* Form massage and alert's */
+
+.msg {
+  font-size: 0.8em;
+  padding: 0 0.5em;
+  line-height: 1.3em;
+  transition: all 0.3s ease-out;
+  margin-top: 0.45em;
+  font-weight: 500;
+  opacity: 0.8;
+}
+
+.msg.error {
+  color: var(--danger);
+  max-height: 0;
+  visibility: hidden;
+}
+
+.error .msg.error {
+  max-height: 3em;
+  visibility: visible;
+}
+
+/* Form on Error */
+
+.error .form .input {
+  border-color: var(--danger);
+}
+.error .form .input,
+.error .form .label {
+  color: var(--danger);
+}
+.error .form .input:focus + .label,
+.error .form .input:not(:focus, :placeholder-shown) + .label {
+  color: var(--danger);
+}
+
+/* Layout */
+/* .row .form:first-child {
+  margin-right: 1%;
+}
+.row .form {
+  display: inline-block;
+  width: 49.5%;
+} */
+
+.row .form:first-child {
+  margin-bottom: 0.5em;
+}
+
+/* Buttons */
+.btn {
+  /* padding: 0.8em 1rem; */
+  height: 3em;
+  cursor: pointer;
+  border: 1px solid rgba(0, 0, 0, 0.7);
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+}
+.btn:focus,
+.btn:hover {
+  opacity: 0.9;
+}
+
+.btn-primary {
+  border: none;
+  color: var(--white);
+  background-color: var(--blue);
+}
+.btn-danegr {
+  border: none;
+  color: var(--white);
+  background-color: var(--danger);
+}
+
+/* layout */
+.auth,
+.container-sm {
+  width: 90%;
+  margin: auto;
+  background: white;
+  padding: 1em;
+}
+
+@media screen and (min-width: 1024px) {
+  .container-sm {
+    width: 75%;
+  }
+}
+@media screen and (min-width: 1366px) {
+  .container-sm {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 568px) {
+  /* Form layout */
+
+  .row .form:first-child {
+    margin-right: 1%;
+    margin-bottom: 0;
+  }
+  .row .form {
+    display: inline-block;
+    width: 49.5%;
+  }
+
+  .auth {
+    width: 30em;
+    padding: 1rem 2em;
+    margin-top: 8rem !important;
+  }
+}
+
+.auth {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0.25em;
+}
